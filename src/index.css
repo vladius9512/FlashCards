@@ -1,0 +1,14 @@
+:root {
+    margin:0;
+    padding: 0;
+    --background: #FFFFFF;
+    --green-primary: #6DE212;
+    --pink-secondary: #F7A1C6;
+    --blue-accent: #0F5ABD;
+    --brown-text: #260312;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+  }
