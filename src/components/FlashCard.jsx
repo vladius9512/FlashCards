@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function FlashCard() {
+function FlashCard({ cardInformations }) {
     const [cardAnswer, setCardAnswer] = useState(false);
     const cardClick = () => {
         setCardAnswer(!cardAnswer);
@@ -9,7 +9,7 @@ function FlashCard() {
         <div className={cardAnswer ? "card-wrapper active" : "card-wrapper"}>
             <div className="card-body">
                 <div className="card-front">
-                    <p>Care este cel mai frecvent cancer la femei?</p>
+                    <p>{cardInformations.frontInfo}</p>
                     <svg
                         viewBox="0 0 21 21"
                         xmlns="http://www.w3.org/2000/svg"
@@ -93,11 +93,7 @@ function FlashCard() {
                             </g>
                         </svg>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua
-                    </p>
+                    <p>{cardInformations.backInfo}</p>
                     <svg
                         viewBox="0 0 21 21"
                         xmlns="http://www.w3.org/2000/svg"
