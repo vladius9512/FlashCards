@@ -11,6 +11,7 @@ function App() {
             frontInfo: "Care este cel mai frecvent cancer la femei?",
             backInfo:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            imagesrc: "",
         },
     ]);
     return (
