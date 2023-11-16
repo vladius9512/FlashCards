@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navigation() {
     return (
         <nav>
@@ -55,9 +57,9 @@ function Navigation() {
                 </svg>
             </div>
             <div className="menu-container">
-                <button>Acasa</button>
-                <button>Despre</button>
-                <button>Conectare</button>
+                <Link to="/">Acasa</Link>
+                <Link to="about">Despre</Link>
+                <Link to="login">Conectare</Link>
                 <button>Inregistrare</button>
             </div>
         </nav>

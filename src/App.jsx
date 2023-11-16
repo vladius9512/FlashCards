@@ -17,7 +17,6 @@ function App() {
     ]);
     return (
         <>
-            <Link to="about">Despre</Link>
             <Navigation></Navigation>
             <FlashCard cardInformations={cardInfo[0]}></FlashCard>
             <FrequentQuestions></FrequentQuestions>
