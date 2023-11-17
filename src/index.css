@@ -11,6 +11,9 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
   }
 
 
@@ -52,3 +55,16 @@ body{
   .card-wrapper.active .card-body {
     transform: rotateX(180deg);
   }
+
+/* navbar */
+
+nav{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-container{
+  display:flex;
+  gap: 1rem;
+}

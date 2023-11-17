@@ -1,0 +1,33 @@
+.btn {
+    border-radius: 0.5rem;
+    padding:0.3rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor:pointer;
+    border: none;
+    transition: 0.2s ease-in-out;
+    box-shadow: none;
+}
+
+.btn:hover{
+    transform:rotate(2deg);
+    box-shadow: 10px -10px #0f5abd4f;
+}
+
+.primaryBtn {
+    composes: btn;
+    composes: bgPrimaryGreen from "./colors.module.css";
+    composes: textBrown from "./colors.module.css";
+}
+
+.secondaryBtn {
+    composes: btn;
+    composes: bgSecondaryPink from "./colors.module.css";
+    composes: textBrown from "./colors.module.css";
+}
+
+.accentBtn {
+    composes: btn;
+    composes: bgAccentBlue from "./colors.module.css";
+    composes: textBrown from "./colors.module.css";
+}

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import styles from "../styles/buttons.module.css";
 
 function Navigation() {
     return (
@@ -57,10 +58,18 @@ function Navigation() {
                 </svg>
             </div>
             <div className="menu-container">
-                <Link to="/">Acasa</Link>
-                <Link to="about">Despre</Link>
-                <Link to="login">Conectare</Link>
-                <button>Inregistrare</button>
+                <Link to="/">
+                    <button className={styles.secondaryBtn}>Acasa</button>
+                </Link>
+                <Link to="about">
+                    <button className={styles.secondaryBtn}>Despre</button>
+                </Link>
+                <Link to="login">
+                    <button className={styles.secondaryBtn}>Conectare</button>
+                </Link>
+                <Link to="signup">
+                    <button className={styles.primaryBtn}>Inregistrare</button>
+                </Link>
             </div>
         </nav>
     );

@@ -1,0 +1,31 @@
+.bgWhite{
+    background-color:#FFFFFF;
+}
+
+.bgPrimaryGreen{
+    background-color:#6DE212;
+}
+
+.bgSecondaryPink{
+    background-color: #F7A1C6;
+}
+
+.bgAccentBlue{
+    background-color: #0F5ABD;
+}
+
+.primaryGreen{
+    color:#6DE212;
+}
+
+.secondaryPink{
+    color:#F7A1C6;
+}
+
+.accentBlue{
+    color:#0F5ABD;
+}
+
+.textBrown{
+    color:#260312;
+}
