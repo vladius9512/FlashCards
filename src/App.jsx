@@ -1,7 +1,5 @@
 import { useState } from "react";
 import FlashCard from "./components/FlashCard";
-import Navigation from "./components/Navigation";
-import { Link } from "react-router-dom";
 import FrequentQuestions from "./components/FrequentQuestions";
 
 function App() {
@@ -17,7 +15,6 @@ function App() {
     ]);
     return (
         <>
-            <Navigation></Navigation>
             <FlashCard cardInformations={cardInfo[0]}></FlashCard>
             <FrequentQuestions></FrequentQuestions>
         </>

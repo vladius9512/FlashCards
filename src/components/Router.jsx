@@ -3,21 +3,27 @@ import App from "../App.jsx";
 import About from "./About.jsx";
 import ErrorPage from "./ErrorPage.jsx";
 import Login from "./LogIn.jsx";
+import Layout from "./Layout.jsx";
 
 const Router = () => {
     const router = createBrowserRouter([
         {
-            path: "/",
-            element: <App />,
+            element: <Layout />,
             errorElement: <ErrorPage />,
-        },
-        {
-            path: "about",
-            element: <About />,
-        },
-        {
-            path: "login",
-            element: <Login />,
+            children: [
+                {
+                    path: "/",
+                    element: <App />,
+                },
+                {
+                    path: "about",
+                    element: <About />,
+                },
+                {
+                    path: "login",
+                    element: <Login />,
+                },
+            ],
         },
     ]);
 
