@@ -23,7 +23,7 @@ const Login = () => {
             if (passValue !== credentials.password) {
                 renderErrorMessage("password");
             } else {
-                setIsSubmitted(true);
+                navigateTo("/adminDashboard");
             }
         } else {
             renderErrorMessage("username");
@@ -37,8 +37,7 @@ const Login = () => {
     };
 
     const credentials = { username: "admin", password: "carina" };
-
-    const renderForm = (
+    return (
         <form onSubmit={handleSubmit}>
             <label htmlFor="username">Username</label>
             <input
@@ -63,7 +62,6 @@ const Login = () => {
             <input type="submit" />
         </form>
     );
-    return <>{isSubmitted ? navigateTo("/adminDashboard") : renderForm}</>;
 };
 
 export default Login;

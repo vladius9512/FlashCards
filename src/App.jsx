@@ -3,6 +3,7 @@ import FlashCard from "./components/FlashCard";
 import FrequentQuestions from "./components/FrequentQuestions";
 import style from "./styles/buttons.module.css";
 import image from "./assets/doctor.svg";
+import Firebase from "./components/Firebase";
 
 function App() {
     const [cardInfo, setCardInfo] = useState([
@@ -31,6 +32,7 @@ function App() {
             </div>
             <FlashCard cardInformations={cardInfo[0]}></FlashCard>
             <FrequentQuestions></FrequentQuestions>
+            <Firebase></Firebase>
         </>
     );
 }
